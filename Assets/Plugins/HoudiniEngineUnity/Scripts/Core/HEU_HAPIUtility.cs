@@ -129,12 +129,6 @@ namespace HoudiniEngineUnity
                     case HAPI_License.HAPI_LICENSE_HOUDINI_ENGINE_UNITY_UNREAL:
                         sb.Append("Houdini Engine for Unity/Unreal\n");
                         break;
-                    case HAPI_License.HAPI_LICENSE_HOUDINI_EDUCATION:
-                        sb.Append("Houdini Education\n");
-                        break;
-                    case HAPI_License.HAPI_LICENSE_HOUDINI_ENGINE_EDUCATION:
-                        sb.Append("Houdini Engine Education\n");
-                        break;
                     default:
                         sb.Append("Unknown\n");
                         break;
@@ -892,11 +886,7 @@ namespace HoudiniEngineUnity
         public static HEU_HoudiniAssetRoot GetAssetInScene(HAPI_NodeId assetID)
         {
             HEU_HoudiniAssetRoot foundAsset = null;
-#if UNITY_6000_0_OR_NEWER
-            HEU_HoudiniAssetRoot[] houdiniAssets = GameObject.FindObjectsByType<HEU_HoudiniAssetRoot>(FindObjectsSortMode.None);
-#else
             HEU_HoudiniAssetRoot[] houdiniAssets = GameObject.FindObjectsOfType<HEU_HoudiniAssetRoot>();
-#endif
 
             foreach (HEU_HoudiniAssetRoot assetRoot in houdiniAssets)
             {

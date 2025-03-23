@@ -291,10 +291,7 @@ namespace HoudiniEngineUnity
         public static bool IsDisconnectedPrefabInstance(GameObject go)
         {
 #if UNITY_EDITOR
-#if UNITY_6000_0_OR_NEWER
-            // Disconnected prefabs are no longer supported
-            return false;
-#elif UNITY_2018_3_OR_NEWER
+#if UNITY_2018_3_OR_NEWER
             return PrefabUtility.IsDisconnectedFromPrefabAsset(go);
 #elif UNITY_2018_2_OR_NEWER
 			return PrefabUtility.GetPrefabType(go) == PrefabType.DisconnectedPrefabInstance;
@@ -1048,11 +1045,7 @@ namespace HoudiniEngineUnity
         /// <returns>List of all Houdini asset root components in the scene (HEU_HoudiniAssetRoot)</returns>
         public static HEU_HoudiniAssetRoot[] GetAllAssetRoots()
         {
-#if UNITY_6000_0_OR_NEWER
-            return GameObject.FindObjectsByType<HEU_HoudiniAssetRoot>(FindObjectsSortMode.None);
-#else
             return GameObject.FindObjectsOfType<HEU_HoudiniAssetRoot>();
-#endif
         }
 
         /// <summary>

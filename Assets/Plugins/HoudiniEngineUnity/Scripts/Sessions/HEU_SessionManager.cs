@@ -226,12 +226,7 @@ namespace HoudiniEngineUnity
         private static void InternalValidateSceneAssets()
         {
             // Go through each asset, and validate in session
-#if UNITY_6000_0_OR_NEWER
-            HEU_HoudiniAsset[] assets = GameObject.FindObjectsByType<HEU_HoudiniAsset>(FindObjectsSortMode.None);
-#else
             HEU_HoudiniAsset[] assets = GameObject.FindObjectsOfType<HEU_HoudiniAsset>();
-#endif
-
             foreach (var asset in assets)
             {
                 if (asset.SessionID != HEU_Defines.HEU_INVALID_NODE_ID)
@@ -329,23 +324,6 @@ namespace HoudiniEngineUnity
         }
 
         /// <summary>
-        /// Create shared memory session for Houdini Engine.
-        /// </summary>
-        /// <param name="sharedMemoryName"></param>
-        /// <param name="sharedMemoryBufferType"></param>
-        /// <param name="sharedMemoryBufferSize"></param>
-        /// <param name="autoClose"></param>
-        /// <param name="timeout"></param>
-        /// <returns>True if successfully created session.</returns>
-        public static bool CreateThriftSharedMemorySession(string sharedMemoryName, HAPI_ThriftSharedMemoryBufferType sharedMemoryBufferType, int sharedMemoryBufferSize, bool autoClose, float timeout, bool logError)
-        {
-            CheckAndCloseExistingSession();
-
-            _defaultSession = CreateSessionObject();
-            return _defaultSession.CreateThriftSharedMemorySession(true, sharedMemoryName, sharedMemoryBufferType, sharedMemoryBufferSize, autoClose, timeout, logError);
-        }
-
-        /// <summary>
         /// Create custom Houdini Engine session.
         /// </summary>
         /// <returns>True if session was created successfully.</returns>
@@ -371,18 +349,6 @@ namespace HoudiniEngineUnity
 
             _defaultSession = CreateSessionObject();
             return _defaultSession.ConnectThriftPipeSession(true, pipeName, autoClose, timeout);
-        }
-
-        public static bool ConnectThriftSharedMemorySession(string sharedMemoryName,
-            HAPI_ThriftSharedMemoryBufferType sharedMemoryBufferType,
-            int sharedMemoryBufferSize, bool autoClose, float timeout)
-        {
-            CheckAndCloseExistingSession();
-
-            _defaultSession = CreateSessionObject();
-            return _defaultSession.ConnectThriftSharedMemorySession(true,
-                sharedMemoryName, sharedMemoryBufferType, sharedMemoryBufferSize,
-                autoClose, timeout);
         }
 
         public static void RecreateDefaultSessionData()
@@ -417,22 +383,6 @@ namespace HoudiniEngineUnity
             return _defaultSession.ConnectThriftPipeSession(
                 true, pipeName, autoClose, timeout,
                 logError, false);
-        }
-
-        public static bool ConnectSessionSyncUsingThriftSharedMemory(
-            string sharedMemoryName,
-            HAPI_ThriftSharedMemoryBufferType sharedMemoryBufferType,
-            int sharedMemoryBufferSize, bool autoClose, float timeout,
-            bool logError)
-        {
-            if (_defaultSession == null)
-            {
-                RecreateDefaultSessionData();
-            }
-
-            return _defaultSession.ConnectThriftSharedMemorySession(
-                true, sharedMemoryName, sharedMemoryBufferType,
-                sharedMemoryBufferSize, autoClose, timeout, logError, false);
         }
 
         public static bool InitializeDefaultSession()
@@ -739,10 +689,6 @@ namespace HoudiniEngineUnity
             if (license == HAPI_License.HAPI_LICENSE_HOUDINI_INDIE || license == HAPI_License.HAPI_LICENSE_HOUDINI_ENGINE_INDIE)
             {
                 fileExt = "hiplc";
-            }
-            else if (license == HAPI_License.HAPI_LICENSE_HOUDINI_EDUCATION || license == HAPI_License.HAPI_LICENSE_HOUDINI_ENGINE_EDUCATION)
-            {
-                fileExt = "hipnc";
             }
 
             string filePath = UnityEditor.EditorUtility.SaveFilePanel("Save HIP File", "", "hscene", fileExt);
