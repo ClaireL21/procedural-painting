@@ -35,7 +35,23 @@ MonoBehaviour:
     m_Bits: 4294967295
   NormalsTexture: {fileID: 8400000, guid: b7ec37e860fee534fb2a17200790b557, type: 2}
   _NormalsEvent: 300
-  normalsMaterial: {fileID: 2100000, guid: 8a071ae0578d7784ebbd3f7fb6cb361f, type: 2}
+  normalsMaterial: {fileID: 2100000, guid: a97b9651ab088d84f866091505284080, type: 2}
+--- !u!114 &-2111501266635735425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55b77c08467401341ae33a246869b36a, type: 3}
+  m_Name: FullScreenFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  settings:
+    renderPassEvent: 500
+    material: {fileID: 2100000, guid: b4a1dc49b784f0942859ef5aeb5c58d9, type: 2}
 --- !u!114 &-668441091355188828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48,11 +64,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55b77c08467401341ae33a246869b36a, type: 3}
   m_Name: FullScreenFeature
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   settings:
     renderPassEvent: 500
-    material: {fileID: -876546973899608171, guid: 5f378be6dc0eea944a6fe0035c7b68c3,
-      type: 3}
+    material: {fileID: 2100000, guid: b5f7a776d19f0ce459b8ad31e31a6dd9, type: 2}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,9 +86,12 @@ MonoBehaviour:
     hdrDebugViewPS: {fileID: 4800000, guid: 573620ae32aec764abd4d728906d2587, type: 3}
   m_RendererFeatures:
   - {fileID: -6365355809572324394}
+  - {fileID: -2111501266635735425}
   - {fileID: -668441091355188828}
+  - {fileID: 8705300598746568664}
+  - {fileID: 1769217177816780835}
   - {fileID: -7160853209240634935}
-  m_RendererFeatureMap: d6fb78c59db6a9a7a4e17f745e38b9f6c9f97e2ef2899f9c
+  m_RendererFeatureMap: d6fb78c59db6a9a77fbe6303c970b2e2a4e17f745e38b9f6d8d7489bc570cf7823d04946a6858d18c9f97e2ef2899f9c
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 0}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -116,3 +134,35 @@ MonoBehaviour:
   m_CopyDepthMode: 0
   m_AccurateGbufferNormals: 0
   m_IntermediateTextureMode: 1
+--- !u!114 &1769217177816780835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55b77c08467401341ae33a246869b36a, type: 3}
+  m_Name: FullScreenFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    renderPassEvent: 500
+    material: {fileID: 2100000, guid: fc1fe44121c64964797e47a85c5b6020, type: 2}
+--- !u!114 &8705300598746568664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55b77c08467401341ae33a246869b36a, type: 3}
+  m_Name: FullScreenFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  settings:
+    renderPassEvent: 500
+    material: {fileID: 2100000, guid: a926dcf48294d07448215eed603467b4, type: 2}
