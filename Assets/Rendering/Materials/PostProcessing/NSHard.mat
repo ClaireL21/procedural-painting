@@ -48,11 +48,11 @@ Material:
     m_Ints: []
     m_Floats:
     - REQUIRE_DEPTH_TEXTURE: 1
-    - _DepthStrength: 6.79
-    - _DepthThickness: 0.13
-    - _DepthThreshold: 0.65
-    - _NoiseScale: 11.89
-    - _Thickness: 1.05
+    - _DepthStrength: 4.91
+    - _DepthThickness: 0.14
+    - _DepthThreshold: 0.2
+    - _NoiseScale: 12.51
+    - _Thickness: 1.13
     m_Colors:
     - _OutlineColor: {r: 0.3207547, g: 0.08896404, b: 0.22296801, a: 0}
   m_BuildTextureStacks: []
