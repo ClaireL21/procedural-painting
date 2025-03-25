@@ -8,6 +8,7 @@ public class CameraSystem : MonoBehaviour
     private Vector3 dragOrigin;
     private Vector3 ResetCamera;
     bool leftClick;
+    bool rightClick;
 
 
     // Start is called before the first frame update
@@ -15,6 +16,7 @@ public class CameraSystem : MonoBehaviour
     {
         ResetCamera = transform.position;
         leftClick = false;
+        rightClick = false;
     }
 
     // Update is called once per frame
@@ -26,16 +28,15 @@ public class CameraSystem : MonoBehaviour
             transform.position = ResetCamera;
         }
 
-        /* Pan/zoom camera by left click and drag */
+        /* Pan camera on left click and drag */
         if (Input.GetMouseButtonDown(0))
         {
             dragOrigin = Input.mousePosition;
             leftClick = true;
             return;
         }
-        /*if (leftClick)
+        if (leftClick)
         {
-            leftClick = false;
             Vector3 pos = Camera.main.ScreenToViewportPoint(Input.mousePosition - dragOrigin);
             Vector3 move = new Vector3(0, pos.y * dragSpeed, pos.x * dragSpeed);
             transform.Translate(move, Space.World);
@@ -44,8 +45,28 @@ public class CameraSystem : MonoBehaviour
         if (!Input.GetMouseButton(0))
         {
             leftClick = false;
-        }*/
-        
+        }
+
+        /* Zoom camera on right click and drag */
+        if (Input.GetMouseButtonDown(1))
+        {
+            dragOrigin = Input.mousePosition;
+            rightClick = true;
+            return;
+        }
+        if (rightClick)
+        {
+            Vector3 pos = Camera.main.ScreenToViewportPoint(Input.mousePosition - dragOrigin);
+            Vector3 move = new Vector3(pos.x * dragSpeed, pos.y * dragSpeed, 0);
+            transform.Translate(move, Space.World);
+
+        }
+        if (!Input.GetMouseButton(1))
+        {
+            rightClick = false;
+        }
+
+        /*
         if (!Input.GetMouseButton(0)) return;
 
         Vector3 pos = Camera.main.ScreenToViewportPoint(Input.mousePosition - dragOrigin);
@@ -56,7 +77,7 @@ public class CameraSystem : MonoBehaviour
 
         transform.Translate(move, Space.World);
 
-        
+        */
 
     }
 }
