@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: NoisySobelMat
-  m_Shader: {fileID: -6465566751694194690, guid: c28c70fb0a644894c8c092bbd3a7c403,
+  m_Name: NSHard
+  m_Shader: {fileID: -6465566751694194690, guid: d48152e6bd602554aacc62dd53c0c11d,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -48,11 +48,11 @@ Material:
     m_Ints: []
     m_Floats:
     - REQUIRE_DEPTH_TEXTURE: 1
-    - _DepthStrength: 0.83
-    - _DepthThickness: 0.05
-    - _DepthThreshold: 4.4
-    - _NoiseScale: 11.31
-    - _Thickness: 8.64
+    - _DepthStrength: 6.79
+    - _DepthThickness: 0.13
+    - _DepthThreshold: 0.65
+    - _NoiseScale: 11.89
+    - _Thickness: 1.42
     m_Colors:
-    - _OutlineColor: {r: 0.5660378, g: 0.4079744, b: 0.42586833, a: 0}
+    - _OutlineColor: {r: 0.3207547, g: 0.08896404, b: 0.22296801, a: 0}
   m_BuildTextureStacks: []
