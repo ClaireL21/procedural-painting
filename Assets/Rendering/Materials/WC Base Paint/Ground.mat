@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Lavender 1
+  m_Name: Ground
   m_Shader: {fileID: -6465566751694194690, guid: f39dde9d4f85b8240aa997070cb1a6f2,
     type: 3}
   m_Parent: {fileID: 0}
@@ -146,10 +146,10 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.33866143, g: 0.500591, b: 0.5943396, a: 1}
+    - _Color: {r: 0.29277325, g: 0.5786047, b: 0.6037736, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _RampedDiffuseValues: {r: 0.3, g: 0.5, b: 1, a: 0}
-    - _Shadow_Color: {r: 0.26625133, g: 0.36569372, b: 0.509434, a: 1}
+    - _Shadow_Color: {r: 0.33962262, g: 0.13905303, b: 0.16810128, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Thresholds: {r: 0.33, g: 0.66, b: 0, a: 0}
   m_BuildTextureStacks: []

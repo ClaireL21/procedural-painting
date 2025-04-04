@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Maroon
+  m_Name: BrightBlue2
   m_Shader: {fileID: -6465566751694194690, guid: f39dde9d4f85b8240aa997070cb1a6f2,
     type: 3}
   m_Parent: {fileID: 0}
@@ -146,10 +146,10 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.7169812, g: 0.3003204, b: 0.41269103, a: 1}
+    - _Color: {r: 0.22999282, g: 0.5218841, b: 0.6886792, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _RampedDiffuseValues: {r: 0.3, g: 0.5, b: 1, a: 0}
-    - _Shadow_Color: {r: 0.254717, g: 0.037006043, b: 0.11673127, a: 1}
+    - _Shadow_Color: {r: 0.10172657, g: 0.23188852, b: 0.4245283, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Thresholds: {r: 0.33, g: 0.66, b: 0, a: 0}
   m_BuildTextureStacks: []

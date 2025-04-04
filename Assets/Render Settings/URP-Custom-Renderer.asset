@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55b77c08467401341ae33a246869b36a, type: 3}
   m_Name: FullScreenFeature
   m_EditorClassIdentifier: 
-  m_Active: 0
+  m_Active: 1
   settings:
     renderPassEvent: 500
     material: {fileID: 2100000, guid: fc1fe44121c64964797e47a85c5b6020, type: 2}

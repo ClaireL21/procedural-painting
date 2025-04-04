@@ -53,5 +53,5 @@ Material:
     - _ColorThreshold: 0.59
     - _Thickness: 1.23
     m_Colors:
-    - _OutlineColor: {r: 0.8301887, g: 0.6688501, b: 0.78241587, a: 0}
+    - _OutlineColor: {r: 0.8584906, g: 0.6754539, b: 0.80491894, a: 0}
   m_BuildTextureStacks: []

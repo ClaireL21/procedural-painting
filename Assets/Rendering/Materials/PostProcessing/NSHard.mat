@@ -52,7 +52,7 @@ Material:
     - _DepthThickness: 0.13
     - _DepthThreshold: 0.19
     - _NoiseScale: 8.02
-    - _Thickness: 1.41
+    - _Thickness: 1.91
     m_Colors:
     - _OutlineColor: {r: 0.5296725, g: 0.8584906, b: 0.63616043, a: 0}
   m_BuildTextureStacks: []
