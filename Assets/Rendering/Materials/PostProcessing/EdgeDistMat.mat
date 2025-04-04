@@ -42,10 +42,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _DistortionStrength: 29.7
-    - _OutlineStrength: 0.5
+    - _DistortionStrength: 125.7
+    - _OutlineStrength: 1.18
     m_Colors:
-    - _OutlineColor: {r: 0.5, g: 0.20943394, b: 0.2438431, a: 0}
-    - _VignetteColor: {r: 0.9245283, g: 0.61826944, b: 0.5704165, a: 0}
+    - _OutlineColor: {r: 0.49287954, g: 0.2990566, b: 0.5, a: 0}
+    - _VignetteColor: {r: 1, g: 0.54874575, b: 0.48490566, a: 0}
     - _VignetteStrength: {r: 0.28, g: 0.8, b: 0, a: 0}
   m_BuildTextureStacks: []

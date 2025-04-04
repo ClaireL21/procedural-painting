@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ColorOutlineMat
+  m_Name: ColorLines
   m_Shader: {fileID: -6465566751694194690, guid: fc8a88d52d3ded04188e1d680b1a46d0,
     type: 3}
   m_Parent: {fileID: 0}
@@ -48,10 +48,10 @@ Material:
     m_Ints: []
     m_Floats:
     - REQUIRE_OPAQUE_TEXTURE: 1
-    - _ColorStrength: 0.82
-    - _ColorThickness: 1.36
-    - _ColorThreshold: 1.48
-    - _Thickness: 3.37
+    - _ColorStrength: 0.56
+    - _ColorThickness: 5.45
+    - _ColorThreshold: 0.59
+    - _Thickness: 1.23
     m_Colors:
-    - _OutlineColor: {r: 0.50514007, g: 0.1634745, b: 0.7735849, a: 0}
+    - _OutlineColor: {r: 0.8301887, g: 0.6688501, b: 0.78241587, a: 0}
   m_BuildTextureStacks: []

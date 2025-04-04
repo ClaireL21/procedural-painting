@@ -48,10 +48,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55b77c08467401341ae33a246869b36a, type: 3}
   m_Name: Color Outlines
   m_EditorClassIdentifier: 
-  m_Active: 0
+  m_Active: 1
   settings:
     renderPassEvent: 500
-    material: {fileID: 2100000, guid: b4a1dc49b784f0942859ef5aeb5c58d9, type: 2}
+    material: {fileID: 2100000, guid: 811c4d1dae415304e97013a7754132c6, type: 2}
 --- !u!114 &-1436358221715942001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,13 +102,13 @@ MonoBehaviour:
     hdrDebugViewPS: {fileID: 4800000, guid: 573620ae32aec764abd4d728906d2587, type: 3}
   m_RendererFeatures:
   - {fileID: -6365355809572324394}
-  - {fileID: 1769217177816780835}
   - {fileID: -2111501266635735425}
   - {fileID: -668441091355188828}
   - {fileID: 8705300598746568664}
+  - {fileID: 1769217177816780835}
   - {fileID: -1436358221715942001}
   - {fileID: -7160853209240634935}
-  m_RendererFeatureMap: d6fb78c59db6a9a723d04946a6858d187fbe6303c970b2e2a4e17f745e38b9f6d8d7489bc570cf788fd568b8ce0711ecc9f97e2ef2899f9c
+  m_RendererFeatureMap: d6fb78c59db6a9a77fbe6303c970b2e2a4e17f745e38b9f6d8d7489bc570cf7823d04946a6858d188fd568b8ce0711ecc9f97e2ef2899f9c
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 0}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
