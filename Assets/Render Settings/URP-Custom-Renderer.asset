@@ -29,7 +29,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55b77c08467401341ae33a246869b36a, type: 3}
   m_Name: FullScreenFeature
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   settings:
     renderPassEvent: 500
     material: {fileID: 2100000, guid: 730953d94b0a11048a1be1c3a28094f8, type: 2}
@@ -52,6 +52,38 @@ MonoBehaviour:
   NormalsTexture: {fileID: 8400000, guid: b7ec37e860fee534fb2a17200790b557, type: 2}
   _NormalsEvent: 300
   normalsMaterial: {fileID: 2100000, guid: a97b9651ab088d84f866091505284080, type: 2}
+--- !u!114 &-3930358631901108124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55b77c08467401341ae33a246869b36a, type: 3}
+  m_Name: Tint
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    renderPassEvent: 500
+    material: {fileID: 2100000, guid: c1c54489ca401594db95d585b1870c80, type: 2}
+--- !u!114 &-3369514275264750450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55b77c08467401341ae33a246869b36a, type: 3}
+  m_Name: WobbleTest
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  settings:
+    renderPassEvent: 500
+    material: {fileID: 2100000, guid: e4040b11a6ea65a4e9457e9ae3c9c81f, type: 2}
 --- !u!114 &-2111501266635735425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,7 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55b77c08467401341ae33a246869b36a, type: 3}
   m_Name: Noisy Sobel Outlines
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   settings:
     renderPassEvent: 500
     material: {fileID: 2100000, guid: 1202e407d1bc25548a114686cbbe20b1, type: 2}
@@ -118,14 +150,18 @@ MonoBehaviour:
     hdrDebugViewPS: {fileID: 4800000, guid: 573620ae32aec764abd4d728906d2587, type: 3}
   m_RendererFeatures:
   - {fileID: -6365355809572324394}
+  - {fileID: 2612049478356583155}
   - {fileID: -2111501266635735425}
   - {fileID: -668441091355188828}
   - {fileID: 8705300598746568664}
   - {fileID: 1769217177816780835}
   - {fileID: -1436358221715942001}
+  - {fileID: 5189181746287252358}
   - {fileID: -7160853209240634935}
   - {fileID: -6827577942772344825}
-  m_RendererFeatureMap: d6fb78c59db6a9a77fbe6303c970b2e2a4e17f745e38b9f6d8d7489bc570cf7823d04946a6858d188fd568b8ce0711ecc9f97e2ef2899f9c0718c3fc08923fa1
+  - {fileID: -3369514275264750450}
+  - {fileID: -3930358631901108124}
+  m_RendererFeatureMap: d6fb78c59db6a9a7f342304d29dd3f247fbe6303c970b2e2a4e17f745e38b9f6d8d7489bc570cf7823d04946a6858d188fd568b8ce0711ec869364064ead0348c9f97e2ef2899f9c0718c3fc08923fa18e9c3c7d9e143dd164e8a4f1a58f74c9
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 0}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -184,6 +220,41 @@ MonoBehaviour:
   settings:
     renderPassEvent: 500
     material: {fileID: 2100000, guid: fc1fe44121c64964797e47a85c5b6020, type: 2}
+--- !u!114 &2612049478356583155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 483c2ac28fd2531498747b4c3f11aa39, type: 3}
+  m_Name: NormalFeature
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  normalsLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  NormalsTexture: {fileID: 8400000, guid: f02a48cd827413f43b87914499ce211f, type: 2}
+  _NormalsEvent: 300
+  normalsMaterial: {fileID: 2100000, guid: b44cb4d9a4ea2e042a6636a80c96eeb5, type: 2}
+--- !u!114 &5189181746287252358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55b77c08467401341ae33a246869b36a, type: 3}
+  m_Name: NSHardWiggle
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    renderPassEvent: 500
+    material: {fileID: 2100000, guid: f8a400ba2146fd94d907a91a8683e49e, type: 2}
 --- !u!114 &8705300598746568664
 MonoBehaviour:
   m_ObjectHideFlags: 0

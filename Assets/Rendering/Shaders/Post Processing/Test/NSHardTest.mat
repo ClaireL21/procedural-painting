@@ -21,7 +21,7 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
-  m_LockedProperties: 
+  m_LockedProperties: REQUIRE_DEPTH_TEXTURE
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -48,11 +48,11 @@ Material:
     m_Ints: []
     m_Floats:
     - REQUIRE_DEPTH_TEXTURE: 1
-    - _DepthStrength: 0
-    - _DepthThickness: 0
-    - _DepthThreshold: 0
-    - _NoiseScale: 10
-    - _Thickness: 0
+    - _DepthStrength: 3.4
+    - _DepthThickness: 0.19
+    - _DepthThreshold: 0.23
+    - _NoiseScale: 50.3
+    - _Thickness: 2.74
     m_Colors:
-    - _OutlineColor: {r: 0.9339623, g: 0.4528836, b: 0.4528836, a: 0}
+    - _OutlineColor: {r: 0.254717, g: 0.15955856, b: 0.22767839, a: 0}
   m_BuildTextureStacks: []
