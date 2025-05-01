@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TintMat
-  m_Shader: {fileID: -6465566751694194690, guid: 4fdb7e75e7c8a274fb4cb188459a8617,
+  m_Name: WorldPosMat
+  m_Shader: {fileID: -6465566751694194690, guid: 44d6ce09ac281c7449064b04baf6369c,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -24,14 +24,6 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Normal_Texture:
-        m_Texture: {fileID: 8400000, guid: b7ec37e860fee534fb2a17200790b557, type: 2}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -46,7 +38,23 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Opacity: 0.48
+    - _QueueControl: 0
+    - _QueueOffset: 0
     m_Colors:
-    - _TintColor: {r: 0.9150943, g: 0.3660377, b: 0.3715818, a: 0}
+    - _CamPos: {r: 0, g: 3.79, b: -6.39, a: 0}
+    - _MaxBound: {r: 9.49, g: 7.12, b: -0.6, a: 0}
+    - _MinBound: {r: -10.4, g: -5.87, b: -10.95, a: 0}
   m_BuildTextureStacks: []
+--- !u!114 &5354128899392087886
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7

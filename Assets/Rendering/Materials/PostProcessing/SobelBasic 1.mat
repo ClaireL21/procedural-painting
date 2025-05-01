@@ -7,12 +7,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TintMat
-  m_Shader: {fileID: -6465566751694194690, guid: 4fdb7e75e7c8a274fb4cb188459a8617,
+  m_Name: SobelBasic 1
+  m_Shader: {fileID: -6465566751694194690, guid: 78c12941e96956145b7a4a0741913ab4,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - REQUIRE_DEPTH_TEXTURE
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -28,7 +29,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Normal_Texture:
+    - _NormalsBuffer:
         m_Texture: {fileID: 8400000, guid: b7ec37e860fee534fb2a17200790b557, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -46,7 +47,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Opacity: 0.48
+    - REQUIRE_DEPTH_TEXTURE: 1
+    - _DepthStrength: 0.3
+    - _DepthThickness: 0.29
+    - _DepthThreshold: -0.38
+    - _Thickness: 0.77
     m_Colors:
-    - _TintColor: {r: 0.9150943, g: 0.3660377, b: 0.3715818, a: 0}
+    - _OutlineColor: {r: 1, g: 0.2980392, b: 0.7438728, a: 0}
   m_BuildTextureStacks: []

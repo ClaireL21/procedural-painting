@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 22f5bf6cc335d6445a68bb1318307c58
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - WorldTexture: {instanceID: 0}
+  - worldMaterial: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
