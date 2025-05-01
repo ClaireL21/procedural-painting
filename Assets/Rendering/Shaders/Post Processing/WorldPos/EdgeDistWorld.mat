@@ -49,7 +49,7 @@ Material:
     - _DistortionStrength: 180.8
     - _OutlineStrength: 19.2
     m_Colors:
-    - _OutlineColor: {r: 0.4436454, g: 0.6320754, b: 0.6145954, a: 0}
-    - _VignetteColor: {r: 1, g: 0.65471697, b: 0.65471697, a: 0}
-    - _VignetteStrength: {r: 0.3, g: 0.87, b: 0, a: 0}
+    - _OutlineColor: {r: 0.6263617, g: 0.7264151, b: 0.7180773, a: 0}
+    - _VignetteColor: {r: 0.9339623, g: 0.77007836, b: 0.86733174, a: 0}
+    - _VignetteStrength: {r: 0.47, g: 0.86, b: 0, a: 0}
   m_BuildTextureStacks: []

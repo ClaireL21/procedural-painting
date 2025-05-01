@@ -86,6 +86,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Triplanar_536b9636eca04441b86a95b4f92e6f38_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: b64aa87a8707a7b43abac65ba83e0711, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Triplanar_7952388054df4a719ac196006af82bed_Texture_1_Texture2D:
         m_Texture: {fileID: 2800000, guid: d50f8f5f77303064bac1da6e5ef98bfb, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -111,6 +115,8 @@ Material:
     - _AlphaToMask: 0
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
+    - _BrushOpacity: 0
+    - _BrushStrength: 1
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
@@ -146,7 +152,11 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BrushColorBright: {r: 1, g: 0.9279585, b: 0.42830187, a: 0}
+    - _BrushColorLight: {r: 0, g: 0, b: 0, a: 0}
+    - _BrushColorShadow: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0.6603774, g: 0.42706832, b: 0.28284088, a: 1}
+    - _Color_1: {r: 1, g: 0.9279585, b: 0.42830187, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _RampedDiffuseValues: {r: 0.2, g: 0.4, b: 1, a: 0}
     - _Shadow_Color: {r: 0.5660378, g: 0.33457392, b: 0.24777499, a: 1}

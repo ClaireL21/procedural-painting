@@ -48,5 +48,5 @@ Material:
     m_Floats:
     - _Opacity: 0.48
     m_Colors:
-    - _TintColor: {r: 0.9150943, g: 0.3660377, b: 0.3715818, a: 0}
+    - _TintColor: {r: 1, g: 0.48490566, b: 0.72524446, a: 0}
   m_BuildTextureStacks: []
