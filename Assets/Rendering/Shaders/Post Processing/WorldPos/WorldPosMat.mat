@@ -41,7 +41,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _CamPos: {r: 0, g: 3.79, b: -6.39, a: 0}
+    - _CamPos: {r: 0, g: 3.5, b: -8.3, a: 0}
     - _MaxBound: {r: 9.49, g: 7.12, b: -0.6, a: 0}
     - _MinBound: {r: -10.4, g: -5.87, b: -10.95, a: 0}
   m_BuildTextureStacks: []

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-1647763918052138859
+--- !u!114 &-1530781952291225893
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Ground
+  m_Name: Orange
   m_Shader: {fileID: -6465566751694194690, guid: f39dde9d4f85b8240aa997070cb1a6f2,
     type: 3}
   m_Parent: {fileID: 0}
@@ -127,15 +127,15 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _Fresnel_Amount: 0.36
-    - _Fresnel_Power: 0.9
+    - _Fresnel_Amount: 1.14
+    - _Fresnel_Power: 1.43
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _MAIN_LIGHT_SHADOWS_CASCADE: 1
     - _Metallic: 0
     - _Noise_Brighten: 0.02
-    - _Noise_Strength: 0.31
+    - _Noise_Strength: 0.15
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueControl: 0
@@ -153,11 +153,13 @@ Material:
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BrushColorBright: {r: 1, g: 0.9279585, b: 0.42830187, a: 0}
-    - _BrushColorShadow: {r: 0.7921569, g: 0.23529407, b: 0.30309916, a: 0}
-    - _Color: {r: 0.29277325, g: 0.5786047, b: 0.6037736, a: 1}
+    - _BrushColorLight: {r: 0, g: 0, b: 0, a: 0}
+    - _BrushColorShadow: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 0.5337843, g: 0.7924528, b: 0.5341658, a: 1}
+    - _Color_1: {r: 1, g: 0.9279585, b: 0.42830187, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _RampedDiffuseValues: {r: 0.3, g: 0.5, b: 1, a: 0}
-    - _Shadow_Color: {r: 0.33962262, g: 0.13905303, b: 0.16810128, a: 1}
+    - _RampedDiffuseValues: {r: 0.2, g: 0.4, b: 1, a: 0}
+    - _Shadow_Color: {r: 0.3882353, g: 0.21960784, b: 0.3513799, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Thresholds: {r: 0.33, g: 0.66, b: 0, a: 0}
   m_BuildTextureStacks: []
